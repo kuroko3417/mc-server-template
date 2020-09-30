@@ -1,0 +1,12 @@
+version: "3.0"
+
+services:
+  centos7.8:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: kuroko3417/mc-server-template:latest
+    container_name: mc-server-template
+    environment:
+      TZ: Asia/Tokyo
+    tty: true
